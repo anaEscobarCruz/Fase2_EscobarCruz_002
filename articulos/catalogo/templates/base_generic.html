@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+            h1{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+            li{justify-items: right;}
+            body {background-color: #dbdbdbd8;}
+            .footer {  position: fixed;  left: 0;  bottom: 0;  width: 100%;  background-color: rgb(145, 145, 145);  color: white;  text-align: center;}
+    
+    </style>
+    <title>Trabajo1</title>
+    {% load static %}
+    <link rel="stylesheet" href="css/bootstrap.css" />
+</head>
+
+<body style="background-image:url(images/STARS.jpg)">
+    <div>
+        <header class="container">
+            <nav class="navbar navbar-expand bg-light">
+                <h1>REGALOS CON AMOR</h1>       
+                {% block sidebar %}                   
+                <ul class="sidebar-nav">
+                    <li><a class="nav-item"></a><a href="Index.html" class="nav-link">Inicio </a></li>
+                    <li><a class="nav-link">Galería</a>
+                        <ul>
+                            <li><a href="Confecciones.html">Confecciones</a></li>
+                            <li><a href="Estampados.html">Estampados</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link">Contáctenos</a>
+                    <ul>
+                            <li><a href="https://www.instagram.com/tu_regalo_con_amor/">Instagram</a></li>
+                            <li><a href="https://www.facebook.com/Men%C3%BA-Confecci%C3%B3n-A-La-Carta-699928823698157/">Facebook</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-item"><a href="Formulario.html" class="nav-link">Sugerencias</a></li>
+                </ul>
+                {% endblock %}
+            </nav>
+        </header>    
+
+        <div class="footer">
+            <p>Developed by A.L.E.C</p>
+    </div>
+</body>
+</html>
+
+{% endblock %}
